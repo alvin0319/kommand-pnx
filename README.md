@@ -47,7 +47,7 @@ Replace version with commit hash, or tag version.
 ```kotlin
 override fun onEnable() {
     logger.info("Hello World from onEnable()!")
-    val command = command("test", "Test Command with Kommand!") {
+    val command = kommand("test", "Test Command with Kommand!") {
         commandParameters.clear()
         overload("testOverload") {
             param("testIntParam", CommandParamType.INT)
