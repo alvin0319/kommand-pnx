@@ -18,7 +18,7 @@ typealias KommandParamHandler = (CommandSender, String?, MutableMap.MutableEntry
  * @param description The description of the command.
  * @return The created [Kommand] object.
  */
-inline fun <reified T : PluginBase> T.command(name: String, description: String, block: Kommand.() -> Unit): Kommand {
+inline fun <reified T : PluginBase> T.kommand(name: String, description: String, block: Kommand.() -> Unit): Kommand {
     return Kommand(name, description, this).apply {
         block(this)
     }
