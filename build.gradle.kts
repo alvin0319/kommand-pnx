@@ -60,10 +60,6 @@ tasks {
     }
 }
 
-kotlin {
-    jvmToolchain(19)
-}
-
 // setup maven central publishing
 
 publishing.publications {
