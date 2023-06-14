@@ -1,6 +1,7 @@
 # kommand-pnx
 A library for PowerNukkitX that adds easier usage on Kotlin with DSL support.
 
+[![](https://jitpack.io/v/dev.minjae/kommand-pnx.svg)](https://jitpack.io/#dev.minjae/kommand-pnx)
 # Installation
 ## Gradle (Groovy)
 ```groovy
