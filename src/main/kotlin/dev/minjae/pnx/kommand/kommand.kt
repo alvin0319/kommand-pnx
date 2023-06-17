@@ -61,6 +61,16 @@ inline fun <reified T : KommandOverload> T.param(
     params.add(CommandParameter.newType(name, type, node))
 }
 
+/**
+ * Adds [CommandParameter] to the [KommandOverload].
+ * @param name The name of the parameter.
+ */
+inline fun <reified T : KommandOverload> T.param(
+    param: CommandParameter
+) {
+    params.add(param)
+}
+
 inline fun <reified T : Kommand> T.onExecute(noinline execute: KommandDefaultHandler) {
     if (paramHandler != null) {
         throw IllegalStateException("Cannot set default handler when param handler is set")
