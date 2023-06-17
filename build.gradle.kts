@@ -5,7 +5,7 @@ plugins {
     `maven-publish`
 }
 
-val libraryVersion = "1.0-SNAPSHOT"
+val libraryVersion = "1.0.0"
 
 group = "dev.minjae.pnx.kommand"
 version = libraryVersion
