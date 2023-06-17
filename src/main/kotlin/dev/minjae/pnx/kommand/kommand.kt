@@ -51,6 +51,16 @@ inline fun <reified T : Kommand> T.param(
  * Adds [CommandParameter] to the [KommandOverload].
  * @param name The name of the parameter.
  */
+inline fun <reified T : Kommand> T.param(
+    vararg params: CommandParameter
+) {
+    commandParameters["default"] = params
+}
+
+/**
+ * Adds [CommandParameter] to the [KommandOverload].
+ * @param name The name of the parameter.
+ */
 inline fun <reified T : KommandOverload> T.param(
     name: String,
     type: CommandParamType,
