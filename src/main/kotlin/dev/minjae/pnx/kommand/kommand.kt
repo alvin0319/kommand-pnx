@@ -37,7 +37,6 @@ inline fun <reified T : Kommand> T.overload(key: String, block: KommandOverload.
 /**
  * Adds [CommandParameter] to the [Kommand].
  * @param name The name of the parameter.
- * @param description The description of the parameter.
  * @param type The type of the parameter.
  */
 inline fun <reified T : Kommand> T.param(
@@ -51,7 +50,6 @@ inline fun <reified T : Kommand> T.param(
 /**
  * Adds [CommandParameter] to the [KommandOverload].
  * @param name The name of the parameter.
- * @param description The description of the parameter.
  */
 inline fun <reified T : KommandOverload> T.param(
     name: String,
