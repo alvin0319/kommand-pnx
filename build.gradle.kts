@@ -28,7 +28,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    api("cn.powernukkitx:powernukkitx:1.20.0-r1")
+    compileOnly("cn.powernukkitx:powernukkitx:1.20.0-r1")
 }
 
 tasks.withType<KotlinCompile> {
