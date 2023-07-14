@@ -1,11 +1,11 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.8.21"
+    kotlin("jvm") version "1.9.0"
     `maven-publish`
 }
 
-val libraryVersion = "1.0.1"
+val libraryVersion = "1.0.2"
 
 group = "dev.minjae.pnx.kommand"
 version = libraryVersion
@@ -29,6 +29,7 @@ repositories {
 dependencies {
     testImplementation(kotlin("test"))
     compileOnly("cn.powernukkitx:powernukkitx:1.20.0-r1")
+    compileOnly("org.jetbrains.kotlin:kotlin-stdlib:1.9.0")
 }
 
 tasks.withType<KotlinCompile> {
